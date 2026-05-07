@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://goulasdhmhtrios-sys.github.io/dimitrios-goulas-website/sitemap.xml
