@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Πολιτική Απορρήτου | Δημήτριος Χ. Γούλας</title>
+  <meta name="description" content="Πολιτική απορρήτου της ιστοσελίδας του Δημήτριου Χ. Γούλα, Χειρουργού Οδοντιάτρου στη Ματαράγκα." />
+  <meta name="robots" content="index, follow" />
+  <link rel="icon" href="favicon.ico" sizes="32x32" />
+  <link rel="icon" type="image/png" href="favicon-192.png" sizes="192x192" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <meta name="theme-color" content="#0b3476" />
+  <style>
+    :root {
+      --primary: #0b3476;
+      --primary-dark: #08275a;
+      --bg: #f8fafc;
+      --white: #ffffff;
+      --text: #0f172a;
+      --muted: #64748b;
+      --line: #e2e8f0;
+      --soft: #e0f2fe;
+      --shadow: 0 18px 45px rgba(15, 23, 42, 0.12);
+      --radius: 28px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.75;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(980px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(255, 255, 255, 0.95);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(12px);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 22px;
+      padding: 14px 0;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-mark {
+      width: 54px;
+      height: 54px;
+      border-radius: 18px;
+      overflow: hidden;
+      background: var(--white);
+      border: 1px solid var(--line);
+      box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+      flex: none;
+    }
+
+    .brand-mark img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 4px;
+    }
+
+    .brand-title {
+      font-weight: 800;
+      line-height: 1.1;
+    }
+
+    .brand-subtitle {
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 3px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 0 20px;
+      border-radius: 999px;
+      background: var(--primary);
+      color: var(--white);
+      font-weight: 800;
+      transition: 0.2s ease;
+    }
+
+    .btn:hover {
+      background: var(--primary-dark);
+    }
+
+    .hero {
+      background: radial-gradient(circle at top right, #dbeafe, transparent 36%), radial-gradient(circle at bottom left, #ccfbf1, transparent 36%), var(--white);
+      padding: 72px 0 52px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      border-radius: 999px;
+      background: #eff6ff;
+      color: var(--primary);
+      padding: 8px 14px;
+      font-weight: 800;
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: clamp(34px, 5vw, 58px);
+      line-height: 1.06;
+      letter-spacing: -0.05em;
+      color: #020617;
+      max-width: 780px;
+    }
+
+    .hero p {
+      max-width: 760px;
+      margin-top: 20px;
+      font-size: 18px;
+      color: #475569;
+    }
+
+    .content {
+      padding: 56px 0 78px;
+    }
+
+    .policy-card {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: clamp(24px, 4vw, 44px);
+    }
+
+    .policy-card section + section {
+      border-top: 1px solid var(--line);
+      margin-top: 30px;
+      padding-top: 30px;
+    }
+
+    h2 {
+      font-size: clamp(24px, 3vw, 34px);
+      line-height: 1.18;
+      letter-spacing: -0.03em;
+      color: #020617;
+      margin-bottom: 12px;
+    }
+
+    h3 {
+      font-size: 20px;
+      color: #020617;
+      margin: 18px 0 8px;
+    }
+
+    p {
+      color: #475569;
+      margin-bottom: 12px;
+    }
+
+    ul {
+      padding-left: 22px;
+      color: #475569;
+      margin: 10px 0 14px;
+    }
+
+    li + li {
+      margin-top: 7px;
+    }
+
+    strong {
+      color: #0f172a;
+    }
+
+    .note {
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-radius: 22px;
+      padding: 18px;
+      color: #1e3a8a;
+      margin-top: 18px;
+    }
+
+    .site-footer {
+      background: var(--white);
+      border-top: 1px solid var(--line);
+      padding: 28px 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .footer-inner a {
+      color: var(--primary);
+      font-weight: 800;
+    }
+
+    @media (max-width: 640px) {
+      .header-inner {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .hero {
+        padding: 46px 0 38px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Επιστροφή στην αρχική σελίδα">
+        <div class="brand-mark">
+          <img src="images/logo.jpg" alt="Λογότυπο Δημήτριος Χ. Γούλας" />
+        </div>
+        <div>
+          <div class="brand-title">Δημήτριος Χ. Γούλας</div>
+          <div class="brand-subtitle">Χειρουργός Οδοντίατρος</div>
+        </div>
+      </a>
+
+      <a class="btn" href="index.html">Επιστροφή στην αρχική</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Πολιτική απορρήτου</p>
+        <h1>Προστασία προσωπικών δεδομένων</h1>
+        <p>Η παρούσα Πολιτική Απορρήτου περιγράφει με απλό και κατανοητό τρόπο πώς συλλέγονται και χρησιμοποιούνται τα προσωπικά δεδομένα που υποβάλλονται μέσω της ιστοσελίδας του οδοντιατρείου.</p>
+      </div>
+    </section>
+
+    <section class="content">
+      <div class="container">
+        <article class="policy-card">
+          <section>
+            <h2>1. Υπεύθυνος επικοινωνίας</h2>
+            <p>Η ιστοσελίδα αφορά το οδοντιατρείο του <strong>Δημήτριου Χ. Γούλα, Χειρουργού Οδοντιάτρου</strong>, με έδρα:</p>
+            <ul>
+              <li><strong>Διεύθυνση:</strong> Χαρ. Τρικούπη 188, Ματαράγκα, Τ.Κ. 300 11</li>
+              <li><strong>Τηλέφωνο ιατρείου:</strong> 2635 023100</li>
+              <li><strong>Κινητό:</strong> 6977688620</li>
+              <li><strong>Email:</strong> goulas.dhmhtrios@gmail.com</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>2. Ποια δεδομένα συλλέγονται</h2>
+            <p>Μέσω της φόρμας επικοινωνίας της ιστοσελίδας μπορεί να συλλεχθούν τα παρακάτω στοιχεία, εφόσον τα συμπληρώσει ο επισκέπτης:</p>
+            <ul>
+              <li>Ονοματεπώνυμο</li>
+              <li>Τηλέφωνο επικοινωνίας</li>
+              <li>Email, εφόσον συμπληρωθεί</li>
+              <li>Μήνυμα ή πληροφορίες που καταχωρεί ο χρήστης στο σχετικό πεδίο</li>
+            </ul>
+            <p>Συνιστάται να μην καταχωρούνται μέσω της φόρμας ευαίσθητες ιατρικές πληροφορίες. Για ιατρικά θέματα είναι προτιμότερη η απευθείας επικοινωνία με το ιατρείο ή η αξιολόγηση κατόπιν ραντεβού.</p>
+          </section>
+
+          <section>
+            <h2>3. Σκοπός επεξεργασίας</h2>
+            <p>Τα στοιχεία που αποστέλλονται μέσω της φόρμας χρησιμοποιούνται αποκλειστικά για:</p>
+            <ul>
+              <li>επικοινωνία με τον ενδιαφερόμενο,</li>
+              <li>προγραμματισμό ή επιβεβαίωση ραντεβού,</li>
+              <li>απάντηση σε ερώτημα που υποβλήθηκε μέσω της ιστοσελίδας.</li>
+            </ul>
+            <p>Τα δεδομένα δεν χρησιμοποιούνται για διαφημιστικούς σκοπούς και δεν πωλούνται σε τρίτους.</p>
+          </section>
+
+          <section>
+            <h2>4. Φόρμα επικοινωνίας και Formspree</h2>
+            <p>Η φόρμα επικοινωνίας λειτουργεί μέσω της υπηρεσίας <strong>Formspree</strong>, η οποία χρησιμοποιείται για την ασφαλή αποστολή των στοιχείων της φόρμας στο email του ιατρείου.</p>
+            <p>Με την αποστολή της φόρμας, τα στοιχεία που συμπληρώνονται αποστέλλονται μέσω της υπηρεσίας αυτής, με σκοπό την επικοινωνία σχετικά με το αίτημα του επισκέπτη.</p>
+          </section>
+
+          <section>
+            <h2>5. Google Maps</h2>
+            <p>Η ιστοσελίδα ενδέχεται να ενσωματώνει χάρτη Google Maps για την προβολή της τοποθεσίας του ιατρείου. Κατά τη χρήση του χάρτη, ενδέχεται να εφαρμόζονται οι όροι και η πολιτική απορρήτου της Google.</p>
+          </section>
+
+          <section>
+            <h2>6. Cookies</h2>
+            <p>Η ιστοσελίδα δεν χρησιμοποιεί δικά της cookies παρακολούθησης ή διαφημιστικά cookies.</p>
+            <p>Ωστόσο, υπηρεσίες τρίτων που ενσωματώνονται στην ιστοσελίδα, όπως το Google Maps ή η φόρμα Formspree, ενδέχεται να χρησιμοποιούν τεχνικά cookies ή παρόμοιες τεχνολογίες σύμφωνα με τις δικές τους πολιτικές.</p>
+          </section>
+
+          <section>
+            <h2>7. Χρόνος διατήρησης δεδομένων</h2>
+            <p>Τα στοιχεία που αποστέλλονται μέσω της φόρμας διατηρούνται μόνο για όσο διάστημα είναι απαραίτητο για την απάντηση στο αίτημα και την επικοινωνία με τον ενδιαφερόμενο, εκτός αν υπάρχει νόμιμος λόγος για μεγαλύτερη διατήρηση.</p>
+          </section>
+
+          <section>
+            <h2>8. Δικαιώματα χρήστη</h2>
+            <p>Ο επισκέπτης μπορεί να ζητήσει ενημέρωση, διόρθωση ή διαγραφή των προσωπικών δεδομένων που έχει αποστείλει μέσω της φόρμας επικοινωνίας, στέλνοντας σχετικό αίτημα στο email:</p>
+            <p><strong>goulas.dhmhtrios@gmail.com</strong></p>
+          </section>
+
+          <section>
+            <h2>9. Ασφάλεια</h2>
+            <p>Καταβάλλεται εύλογη προσπάθεια ώστε τα στοιχεία που αποστέλλονται μέσω της ιστοσελίδας να χρησιμοποιούνται μόνο για τον σκοπό για τον οποίο υποβλήθηκαν. Ωστόσο, η αποστολή πληροφοριών μέσω διαδικτύου δεν μπορεί να θεωρηθεί απόλυτα απαλλαγμένη από κινδύνους.</p>
+          </section>
+
+          <section>
+            <h2>10. Τροποποιήσεις της πολιτικής</h2>
+            <p>Η παρούσα Πολιτική Απορρήτου μπορεί να ενημερώνεται όταν απαιτείται, ώστε να ανταποκρίνεται σε αλλαγές της ιστοσελίδας ή των υπηρεσιών που χρησιμοποιούνται.</p>
+            <p><strong>Τελευταία ενημέρωση:</strong> Μάιος 2026</p>
+
+            <div class="note">
+              Η παρούσα σελίδα αποτελεί απλή ενημερωτική πολιτική απορρήτου για τις ανάγκες της ιστοσελίδας. Για πλήρη νομική συμμόρφωση, ειδικά σε επαγγελματική ιατρική χρήση, συνιστάται έλεγχος από νομικό σύμβουλο.
+            </div>
+          </section>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Δημήτριος Χ. Γούλας. Με επιφύλαξη κάθε νόμιμου δικαιώματος.</p>
+      <p><a href="index.html">Αρχική σελίδα</a></p>
+    </div>
+  </footer>
+</body>
+</html>

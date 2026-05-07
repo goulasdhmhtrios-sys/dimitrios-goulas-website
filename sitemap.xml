@@ -4,4 +4,8 @@
     <loc>https://goulasdhmhtrios-sys.github.io/dimitrios-goulas-website/</loc>
     <priority>1.0</priority>
   </url>
+  <url>
+    <loc>https://goulasdhmhtrios-sys.github.io/dimitrios-goulas-website/privacy.html</loc>
+    <priority>0.4</priority>
+  </url>
 </urlset>
